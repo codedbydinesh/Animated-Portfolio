@@ -3,8 +3,35 @@ import man from "../../assets/man.png";
 
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function Home() {
+
+  useGSAP(() => {
+    let tl1 = gsap.timeline();
+    tl1.from('.line1',{
+      y:50,
+      duration:1,
+      opacity:0
+    })
+    tl1.from('.line2',{
+      y:50,
+      duration:1,
+      opacity:0
+    })
+    tl1.from('.line3',{
+      y:50,
+      duration:1,
+      opacity:0
+    })
+    gsap.from('.right-home img',{
+      x:200,
+      duration:1,
+      opacity:0
+    })
+  })
+
   return (
     <div id="home">
       <div className="left-home">
