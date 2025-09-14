@@ -23,19 +23,20 @@ useGSAP(()=>{
         end: 'top 20%'
       }
     })
-  gsap.from('form',{
-      x: 100,
-      duration: 1,
-      opacity: 0,
-      stagger:1,
-      scrollTrigger:{
-        trigger : 'form',
-        scroll:'body',
-        scrub: 2,
-        start: 'top 70%',
-        end: 'top 20%'
-      }
-    })
+  // gsap.from('form',{
+  //     x: 100,
+  //     duration: 1,
+  //     opacity: 0,
+  //     stagger:1,
+  //     scrollTrigger:{
+  //       trigger : 'form',
+  //       scroller:'body',
+  //       scrub: 2,
+  //       marker: true,
+  //       start: 'top 70%',
+  //       end: 'top 20%'
+  //     }
+  //   })
 })
 
   return (
